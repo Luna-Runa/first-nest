@@ -1,11 +1,12 @@
 import { Module } from '@nestjs/common';
-import { MoviesController } from './movies/movies.controller';
-import { MoviesService } from './movies/movies.service';
+import { MoviesModule } from './movies/movies.module';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
 
 //데코레이터 모듈 (클래스를 위한 함수)
 @Module({
-  imports: [],
-  controllers: [MoviesController],
-  providers: [MoviesService],
+  imports: [MoviesModule],
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}
