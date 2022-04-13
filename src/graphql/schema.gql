@@ -1,0 +1,14 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Movie {
+  genres: [String]
+  id: ID!
+  title: String!
+  year: Int!
+}
+
+type Query {
+  getAllMovie: Movie!
+}
