@@ -10,4 +10,9 @@ export class MoviesResolver {
   getAllMovie() {
     return this.moviesService.getAll();
   }
+
+  @Query((returns) => String)
+  name() {
+    return 'hello world' + 123;
+  }
 }

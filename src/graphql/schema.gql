@@ -11,4 +11,5 @@ type Movie {
 
 type Query {
   getAllMovie: Movie!
+  name: String!
 }
